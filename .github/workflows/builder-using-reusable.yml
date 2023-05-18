@@ -4,6 +4,6 @@ on: [push, pull_request]
 
 jobs:
   build:
-    uses: ./.github/workflows/reusable-workflow.yml@main
+    uses: ./.github/workflows/reusable-workflow.yml
     with: 
       project_location: '.'
