@@ -1,0 +1,16 @@
+name: Builder Workflow (Action)
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    - uses: ./.github/actions/builder
+      with:
+        run_unit_tests: true
+        project_location: SampleDeployment

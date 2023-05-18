@@ -1,0 +1,9 @@
+name: Builder Workflow (Reusable)
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with: 
+      project_location: '.'
