@@ -1,0 +1,12 @@
+name: Builder Workflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ./.github/actions/builder
+      with:
+        run_unit_tests: true
