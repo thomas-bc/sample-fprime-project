@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    uses: ./.github/workflows/reusable-workflow.yml
+    name: "Using Reusable"
+    uses: thomas-bc/project-builder/.github/workflows/project-builder.yml
     with: 
-      project_location: '.'
+      project_location: 'SampleDeployment'
