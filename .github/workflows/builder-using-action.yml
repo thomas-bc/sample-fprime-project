@@ -13,4 +13,4 @@ jobs:
     - uses: thomas-bc/project-builder@main
       with:
         run_unit_tests: true
-        project_location: SampleDeployment
+        build_location: SampleDeployment
