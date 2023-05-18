@@ -13,3 +13,4 @@ jobs:
     - uses: ./.github/actions/builder
       with:
         run_unit_tests: true
+        project_location: SampleDeployment
