@@ -1,4 +1,4 @@
-name: Builder Workflow
+name: Builder Workflow (Action)
 
 on: [push, pull_request]
 
