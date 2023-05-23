@@ -14,3 +14,4 @@ jobs:
       with:
         run_unit_tests: true
         build_location: SampleDeployment
+        postbuild_script: ".github/sample_script.sh"
