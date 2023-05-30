@@ -12,6 +12,5 @@ jobs:
         submodules: recursive
     - uses: fprime-community/project-builder@main
       with:
-        run_unit_tests: true
+        run_unit_tests: false
         build_location: SampleDeployment
-        postbuild_script: ".github/sample_script.sh"

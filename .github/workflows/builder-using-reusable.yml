@@ -8,5 +8,5 @@ jobs:
     uses: fprime-community/project-builder/.github/workflows/project-builder.yml@main
     with: 
       build_location: SampleDeployment
-      postbuild_script: ".github/sample_script.sh"
+      run_unit_tests: true
 
