@@ -45,6 +45,7 @@ module SampleDeployment {
     instance textLogger
     instance uplink
     instance systemResources
+    instance mySampleComp
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers

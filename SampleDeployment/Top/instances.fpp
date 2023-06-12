@@ -121,4 +121,9 @@ module SampleDeployment {
 
   instance systemResources: Svc.SystemResources base id 0x4A00
 
+  instance mySampleComp: SampleDeployment.SampleComponent base id 0x4B00 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 96
+
 }
