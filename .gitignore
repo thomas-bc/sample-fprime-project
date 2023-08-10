@@ -1,2 +1,15 @@
-build-*
-logs
+# fprime items
+logs/
+cmake-build-*
+build-artifacts/
+build-fprime-*
+*-template
+
+# Misc
+/venv/
+/.idea/
+/.vscode/
+.DS_Store
+*.gcov
+
+viz-cache/
