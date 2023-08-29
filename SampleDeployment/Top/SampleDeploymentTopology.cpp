@@ -173,6 +173,7 @@ void teardownTopology(const TopologyState& state) {
     freeThreads(state);
 
     // Other task clean-up.
+    comm.shutdown();
     comm.stopSocketTask();
     (void)comm.joinSocketTask(nullptr);
 
